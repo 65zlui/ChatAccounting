@@ -1,0 +1,15 @@
+<view class="sum">
+<view class="date">
+<picker mode="date" value="{{date}}" start="2018-01" end="" bindchange="bindDateChange" fields="month">
+    <view class="picker">
+      月份{{date}}
+    </view>
+  </picker>
+  </view>
+</view>
+<view class="list" wx:for="{{datalist}}">
+      <view class="left">
+      <view class="classification">{{item.type}}</view>
+      </view>
+      <view class="right">-{{item.price}}</view>
+      </view>

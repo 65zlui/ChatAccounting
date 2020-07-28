@@ -1,0 +1,111 @@
+/* pages/PreferSet/PreferSet.wxss */
+.Myview button{
+  border-radius: 20rpx;
+  margin: 20rpx; 
+  color: white;
+  background: #00e1e1;
+}
+.FlexCenter{/*最外围的盒子是弹性盒子，并居中*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-emphasis-color: #fff;
+}
+.Myview{/*盒子默认不显示，点击按钮后盒子显示出样式*/
+  width: 100%;
+  height: 400rpx;
+  background-color:#eee;
+}
+.Myview image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.Myinput{
+  height: 60rpx;
+  background-color:#fff;
+  margin:30rpx 0rpx;
+  border: 1rpx solid black;
+  border-radius: 10rpx;
+}
+.MyborderA{
+  width: 350rpx;
+   height: 350rpx;
+  border-radius: 50%;
+  background: transparent;
+  border: 20rpx solid;
+  border-color: #eee;
+}
+.MyborderB{
+  width: 300rpx;
+   height: 300rpx;
+  border-radius: 50%;
+  background: transparent;
+  border: 10rpx solid;
+  border-color: #eee;
+}
+.MenuUp{
+  width: 300rpx;
+  height: 150rpx;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: transparent;
+}
+.MenuDown{
+  width: 300rpx;
+  height: 150rpx;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: transparent;
+}
+.Menu1{
+  width: 135rpx;
+  height: 135rpx;
+  margin: 5rpx;
+  padding: 15rpx;
+  box-sizing:border-box;
+  border-radius: 200rpx 0 0 0;
+  background: #eee;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.Menu2{
+  width: 135rpx;
+  height:135rpx;
+  margin: 5rpx;
+  padding: 15rpx;
+  box-sizing:border-box;
+  border-radius: 0 200rpx 0 0;
+  background: #eee;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.Menu3{
+  width: 135rpx;
+  height: 135rpx;
+  margin: 5rpx;
+  padding: 15rpx;
+  box-sizing:border-box;
+  border-radius: 0 0 0 200rpx;
+  background: #eee;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.Menu4{
+  width: 135rpx;
+  height: 135rpx;
+  margin: 5rpx;
+  padding: 15rpx;
+  box-sizing:border-box;
+  border-radius: 0 0 200rpx 0;
+  background: #eee;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.text{
+  color: white;
+}

@@ -1,0 +1,40 @@
+<!--item.wxml-->
+<view class="page">
+    <view class="section">
+        <view class="section__title">消费条目</view>
+        <input bindinput="bindTitleInput" placeholder="请输入消费条目" value="{{title}}" />
+    </view>
+    <view class="section">
+        <view class="section__title">消费类型</view>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{consumptionTypes}}">
+            <view class="picker">
+                <view class="picker_text">{{pickerValue}}</view>
+            </view>
+        </picker>
+    </view>
+    <view class="section">
+        <view class="section__title">消费金额</view>
+        <input bindinput="bindAccountInput" type="digit" value="{{account}}" placeholder="请输入消费金额"/>
+    </view>
+    <!-- <view class="section">
+         <view class="inpux"></view>
+    </view>
+    <view class="section">
+         <view class="inpux"></view></view>
+        
+    <view class="section">
+        <view class="inpux"></view>
+        
+    </view> -->
+    <view class="confirm">
+        <button wx:if="{{id}}" class="button"  bindtap="update">编辑</button>
+        <button wx:else class="button"  bindtap="save">添加</button><!--type="primary"-->
+        <button wx:if="{{id}}" class="button" type="default" bindtap="delete">删除</button>
+    </view>
+</view>
+<toast hidden="{{modalHidden}}" bindchange="hideModal">
+{{modalTitle}}
+</toast>
+<modal class="modal" hidden="{{alertHidden}}" no-cancel bindconfirm="hideAlertView">
+  <view>{{alertTitle}}</view>
+</modal>

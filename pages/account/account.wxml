@@ -1,0 +1,12 @@
+    <view class='main'>
+      <view class='account'>{{account}}</view>
+           <view class="count" bindtap="searchPrice">{{count}}</view>
+      </view>
+      <view class="list" wx:for="{{datalist}}" wx:for-item="item" wx:for-index="index">
+      <view class="left">
+      <view class="info">{{item.item}}</view>
+      <view class="classification">{{item.type}}</view>
+      <view class="date">{{item.account_date}}</view>
+      </view>
+      <view class="right">-{{item.price}}</view>
+      </view>

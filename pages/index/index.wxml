@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="userinfo">
+		<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+		<block wx:else>
+			<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+			<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+		</block>
+	</view>
+
+	<view class="HomePage">
+
+		<navigator url="../Room/Room" hover-class="navigator-hover">
+			<image src="../image/line-team.png"></image>
+			<view >聊天和记账</view>
+		</navigator>
+
+		<navigator url="../account/account" hover-class="navigator-hover">
+			<image src="../image/line-contacts.png"></image>
+			<view >账单查询</view>
+		</navigator>
+
+		<navigator url="../PreferSet/PreferSet" hover-class="navigator-hover">
+			<image src="../image/line-set.png"></image>
+			<view >偏好设置</view>
+		</navigator>
+	</view>
+
+	<navigator class="usermotto" url="../about/about">
+		<text class="user-motto">关于这个小程序</text>
+	</navigator>
+</view>

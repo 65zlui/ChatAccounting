@@ -1,0 +1,60 @@
+<!--点击按钮显示对应盒子-->
+<view>
+  <view class="FlexCenter Myview" wx:if="{{ShowViewAva}}" id="Avatar"><!--修改头像视图区-->
+    <text style="margin:10rpx">当前头像</text>
+    <view><image src="{{AvatarAddress}}" mode="scaleToFill"></image></view>
+    <button bindtap="ChangeAva">选择图片</button>
+  </view>
+  <view class="FlexCenter Myview" wx:if="{{ShowViewCha}}" id="Character"><!--修改性格视图区-->
+    <form catchsubmit="formSubmit">
+      <radio-group name="Radio" style="margin:50rpx">
+        <radio value="random">随机型</radio>
+        <radio value="tsundere">傲娇型</radio>
+        <radio value="zuan">祖安型</radio>
+        <radio value="kawaii">可爱型</radio>
+      </radio-group>
+      <button formType="submit">确认更改</button>
+    </form>
+  </view>
+  <view class="FlexCenter Myview" wx:if="{{ShowViewChaCus}}" id="ChatCustomize"><!--聊天指定视图区-->
+    <view style="display: flex; align-items:center">
+      <text>您发送：</text> <input class="Myinput" bindinput="UserInputChaCus"></input>
+    </view>
+    <view style="display: flex; align-items:center">
+      <text>对方回答：</text> <input class="Myinput" bindinput="AiInputChaCus"></input>
+    </view>
+    <button bindtap="AddChaCus">确认添加</button>
+  </view>
+  <view class="FlexCenter Myview" wx:if="{{ShowViewAccCus}}" id="AccountCustomize"><!--记账指定视图区-->
+    <view style="display: flex; align-items:center">
+      <text>您发送：</text> <input class="Myinput" bindinput="UserInputAccCus"></input>
+    </view>
+    <view style="display: flex; align-items:center">
+      <text>对方回答：</text> <input class="Myinput" bindinput="AiInputAccCus"></input>
+    </view>
+    <button bindtap="AddAccCus">确认添加</button>
+  </view>
+  <view class="FlexCenter" style="width: 750rpx; height:750rpx"><!--菜单区-->
+    <view class="FlexCenter MyborderA" style="border-color: {{BackColor}}"><!--外边框环-->
+      <view class="MyborderB" style="border-color: {{BackColor}}"><!--内边框环-->
+        <view class="MenuUp">
+          <view class="Menu1 FlexCenter" bindtap="Tap1" style="background: {{BackColor1}}">
+          <!--点击则扇形视图和边框环变色，同时显示对应的功能盒子-->
+            <text>修改</text><text>头像</text>
+          </view>
+          <view class="Menu2 FlexCenter" bindtap="Tap2" style="background: {{BackColor2}}">
+            <text>修改</text><text>性格</text>
+          </view>
+        </view>
+        <view class="MenuDown">
+          <view class="Menu3 FlexCenter" bindtap="Tap3" style="background: {{BackColor3}}">
+            <text>聊天</text><text>指定</text>
+          </view>
+          <view class="Menu4 FlexCenter" bindtap="Tap4" style="background: {{BackColor4}}">
+            <text>记账</text><text>指定</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

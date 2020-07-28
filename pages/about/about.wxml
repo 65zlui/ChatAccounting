@@ -1,0 +1,33 @@
+<!--pages/about/about.wxml-->
+<view class="page">
+    <view class="title">聊天记账</view>
+    <view class="section-title">关于本程序</view>
+    <text>本程序主要参考《叨叨记账》app，采用PHP进行开发。特别鸣谢青云客提供AI技术支持、Gogs提供项目管理支持以及正在使用这个小程序的你。</text>
+    <view class="section-title">开发人员</view>
+    <view class="developer">
+        <view class="sub-title">主页：zyh</view>
+    </view>
+    <view class="developer">
+        <view class="sub-title">聊天：ruicmu</view>
+    </view>
+    <view class="developer">
+        <view class="sub-title">记账：ruicmu、van_fantasy</view>
+    </view>
+    <view class="developer">
+        <view class="sub-title">查账：SunnyLLXX</view>
+    </view>
+    <view class="developer">
+        <view class="sub-title">设置：LiHouJue</view>
+    </view>
+    <view class="developer">
+        <view class="sub-title">语言艺术：特邀神秘嘉宾</view>
+    </view>
+    <view class="developer">
+        <view class="sub-title">服务端：van_fantasy</view>
+    </view>
+    <view class="developer">
+        <view class="sub-title">项目负责人：SunnyLLXX</view>
+    </view>
+    <text class="version">v1.0.1</text>
+    <text class="comment">©tigerxly.com</text>
+</view>

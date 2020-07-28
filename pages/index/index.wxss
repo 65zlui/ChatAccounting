@@ -1,0 +1,42 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  position: fixed;
+  bottom: 5px;
+  font-size: 12px;
+}
+
+.HomePage{
+  position: fixed;
+  display: flex;
+  width: 750rpx;
+  bottom: 30px;
+  line-height: 35px;
+}
+.HomePage navigator{
+  
+  width: 250rpx;
+  height: 70px;
+  line-height: 20px;
+  text-align: center;
+}
+.HomePage image{
+  width: 30px;
+  height: 30px;
+}

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "聊天室",
+  "backgroundColor":"#111",
+  "backgroundTextStyle": "dark"
+}
